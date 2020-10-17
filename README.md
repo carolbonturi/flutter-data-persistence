@@ -1,6 +1,7 @@
-# Education
+# bytebank
 
-A new Flutter project.
+Flutter project, made along with Alura Flutter Online Course: https://cursos.alura.com.br/course/flutter-persistencia-interna/.
+
 
 ## Getting Started
 
