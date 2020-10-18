@@ -1,3 +1,4 @@
+import 'package:Education/database/app_database.dart';
 import 'package:Education/models/contact.dart';
 import 'package:flutter/material.dart';
 
@@ -51,7 +52,7 @@ class _ContactFormState extends State<ContactForm> {
                     final int accountNumber = int.tryParse(_accountNumberController.text);
 
                     final Contact newContact = Contact(id: 0, name: name, accountNumber: accountNumber);
-                    Navigator.pop(context, newContact);
+                    save(newContact).then((id) => Navigator.pop(context));
                   },
                 ),
               ),

@@ -28,7 +28,7 @@ class ContactsList extends StatelessWidget {
                     Text('Loading'),
                   ],
                 ),
-              )
+              );
               break;
             case ConnectionState.active:
               break;
@@ -49,7 +49,7 @@ class ContactsList extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => ContactForm())).then((newContact) => print(newContact.toString()));
+              builder: (context) => ContactForm()));
         },
         child: Icon(
           Icons.add,
